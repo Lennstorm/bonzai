@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --smooth-brown: #5A503F;
+    --light-green: #DBE6B5;
+    --light-beige: #F0E8DF;
+    --bonzai-green: #54EABD;
+    --very-orange: #F08F3F;
+}
+
+
+body {
+    max-width: 1440px;
+    background-color: aqua;
+}
+
+.bild1 {
+    background-image: url(assets/photos/01-day.jpg);
+    }
+
