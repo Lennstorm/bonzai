@@ -13,16 +13,18 @@
 
         <header class="header">
 
-            <a class="internal-link" href="about.html" >About</a>
+            <a class="internal-link" href="about.html">About</a>
 
-            <a class="header__logo" href="index.html"> <img class="header__logo" src="/assets/logo/bonz.ai-logo-color-landscape.png" alt="bonzai-logo"> </a>
+            <a class="header__logo" href="index.html"> <img class="header__logo"
+                    src="/assets/logo/bonz.ai-logo-color-landscape.png" alt="bonzai-logo"> </a>
 
-            <a class="internal-link" href="booking.html" >Book</a>
+            <a class="internal-link" href="booking.html">Book</a>
 
 
-</header>
+        </header>
 
         <section class="hero">
+            <section class="hero__slide"></section>
             <section class="hero__slide"></section>
             <section class="hero__slide"></section>
             <section class="hero__slide"></section>
@@ -37,23 +39,51 @@
         </section>
 
         <main class="content">
+            <h2>MAIN</h2>
+            <h1 class="content__title">boK.Ai</h1>
 
-            <h1 class="content__title">bonZ.Ai</h1>
+            
+            <section class="content__booking-wrap">
+                <article class="content__booking-container">
+                
+                <form class="content__checkin-label">
+                    <label>Incheckning</label>
+                    <input required="" type="date">
+                </form>
+            
+                <form class="content__checkout-label">
+                    <label>Utcheckning</label>
+                    <input required="" type="date">
+                </form>
 
-            <aside class="main__image"> </aside>
-            <aside class="main__info"></aside>
-            <aside class="main__image"></aside>
-            <aside class="main__info"></aside>
-            <aside class="main__image"></aside>
-            <aside class="main__info"></aside>
+                <form class="content__guest-qty">
+                    <label>Antal gäster</label>
+                    <input required="" placeholder="Välj antal" type="number">
+                </form>
+                
+                <form class="content__room-qty" action="/booking-search-results.html">
+                    <label>Antal rum</label>
+                    <input required="" placeholder="Välj antal" type="number">
+                    <input class="booking__button" type="submit" value="Sök lediga rum">
+                </form>
+            </article>     
+            </section>
 
         </main>
 
-        <footer class="foot"></footer>
+        <footer class="foot">
+            <h2>FOOTER</h2>
+        </footer>
 
 
 
 
-    </div>    
+    </div>
 </body>
+
 </html>
+
+
+
+
+
