@@ -21,7 +21,7 @@ body {
 }
 
 .wrapper {
-    
+
     max-width: 768px;
 }
 
@@ -54,62 +54,83 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    animation: slider 42s infinite;
+    animation: slider 24s infinite;
 }
 
 .hero .hero__slide:nth-child(1) {
+    opacity: 0;
     background-image: url(/assets/photos/02-day.jpg);
     animation-delay: 0s;
 }
 
 .hero .hero__slide:nth-child(2) {
+    opacity: 0;
     background-image: url(/assets/photos/02-night.jpg);
-    animation-delay: -7s;
+    animation-delay: 4s;
 }
 
 .hero .hero__slide:nth-child(3) {
+    opacity: 0;
     background-image: url(/assets/photos/03-day.jpg);
-    animation-delay: -14s;
+    animation-delay: 8s;
 }
 
 .hero .hero__slide:nth-child(4) {
+    opacity: 0;
     background-image: url(/assets/photos/03-night.jpg);
-    animation-delay: -21s;
+    animation-delay: 12s;
 }
 
 .hero .hero__slide:nth-child(5) {
+    opacity: 0;
     background-image: url(/assets/photos/08-day.jpg);
-    animation-delay: -28s;
+    animation-delay: 16s;
 }
+
 .hero .hero__slide:nth-child(6) {
+    opacity: 0;
     background-image: url(/assets/photos/08-night.jpg);
-    animation-delay: -35s;
+    animation-delay: 20s;
 }
 
 @keyframes slider {
 
-    0%, 14%, 100% {
-        opacity: 1;
-        animation-timing-function: ease;
-        z-index: 0;
-      }
-      20% {
+    0% {
         opacity: 0;
-        animation-timing-function: step-end;
-        z-index: 0;
-      }
-      94% {
-        opacity: 1;
-        animation-timing-function: step-end;
-        z-index: -1;
     }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        /*animation-timing-function: ease;
+        z-index: 0;*/
+    }
+}
+
+20% {
+    opacity: 0;
+    animation-timing-function: step-end;
+    z-index: 0;
+}
+
+94% {
+    opacity: 1;
+    animation-timing-function: step-end;
+    z-index: -1;
 }
 
 
 .booking-banner {
-    height: 12vh;
+    height: 6vh;
     background-color: var(--light-green);
-        display: flex;
+    display: flex;
 }
 
 .booking-banner__navigation {
@@ -118,13 +139,51 @@ body {
 }
 
 .content {
+    /*    padding: 1rem auto 1rem auto;*/
     background-color: var(--light-beige);
+    display: grid;
+    grid-template-columns: auto;
+
+}
+
+.content .content__title,
+.content__info-box {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .content__info-box {
+    background-color: var(--very-orange); /*SKA TAS BORT!!!!*/
+    
+    border: 0.5px solid black; /*SKA TAS BORT!!!!*/
+    width: 50%;
+    aspect-ratio: 1;
+}
+
+.content .content__image:nth-of-type(1) {
+background: url(/assets/photos/09-day.jpg);
+background-repeat: no-repeat;
+background-size: 180%;
+}
+
+.content .content__image:nth-of-type(2) {
+background: url(/assets/photos/04-night.jpg);
+background-repeat: no-repeat;
+background-size: 180%;
+}
+
+.content .content__image:nth-of-type(3) {
+background: url(/assets/photos/05-night.jpg);
+background-repeat: no-repeat;
+background-size: 180%;
+}
+
+
+.content__title {}
+
+.foot {
     display: flex;
+    background-color: var(--smooth-brown);
     justify-content: center;
 }
-
-.content__title {
-
-}
-
-.foot {}
