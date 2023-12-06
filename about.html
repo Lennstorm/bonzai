@@ -3,19 +3,109 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
     <title>About</title>
 </head>
 <body>
-    <header class="header">
 
-        <a class="internal-link" href="about.html" >About</a>
-
-        <a class="header__logo" href="index.html"> <img class="header__logo" src="/assets/logo/bonz.ai-logo-color-landscape.png" alt="bonzai-logo"> </a>
-
-        <a class="internal-link" href="booking.html" >Book</a>
+    <div class="wrapper">
 
 
-    </header>    
+        <header class="header">
 
+            <a class="internal-link" href="about.html">Hotellet</a>
+
+            <a class="header__logo" href="index.html"> <img class="header__logo"
+                    src="/assets/logo/bonz.ai-logo-color-landscape.png" alt="bonzai-logo"> </a>
+
+            <a class="internal-link" href="booking.html">Boka</a>
+
+
+        </header>
+
+        <section class="hero">
+            <section class="hero__slide"></section>
+            <section class="hero__slide"></section>
+            <section class="hero__slide"></section>
+            <section class="hero__slide"></section>
+            <section class="hero__slide"></section>
+            <section class="hero__slide"></section>
+
+        </section>
+
+        <section class="booking-banner">
+
+            <article class="content__booking-container-first">
+                <form class="content__checkin-label">
+                    <label>Incheckning</label>
+                    <input required="" type="date">
+                </form>
+
+                <form class="content__checkout-label">
+                    <label>Utcheckning</label>
+                    <input required="" type="date">
+                </form>
+            </article>
+
+            <article class="content__booking-container-second">
+                <form class="content__guest-qty">
+                    <label>Antal gäster</label>
+                    <input required="" placeholder="Välj antal" type="number">
+                </form>
+                
+                <form class="content__room-qty" action="/booking-search-results.html">
+                    <label>Antal rum</label>
+                    <input required="" placeholder="Välj antal" type="number">
+                    <input class="booking__button" type="submit" value="Sök lediga rum">
+                </form>
+            </article>
+
+        </section>
+        <!--            <nav class="booking-banner__navigation"></nav> -->
+
+
+
+        <main class="content">
+            <h2>Hem   /    about</h2>
+            <h1 class="content__title">bonZ.Ai</h1>
+
+            <aside class="content__info-box content__image"> </aside>
+
+            <aside class="content__info-box content__information">
+                <h2 class="content__info-box-title">Välkommen!</h2>
+                <p class="content__info-box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, illum!</p>
+            </aside>
+            
+            <aside class="content__info-box content__image"> </aside>
+            
+            <aside class="content__info-box content__information">
+                <h2 class="content__info-box-title">Vår AI</h2>
+                <p class="content__info-box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, illum!</p>
+            </aside>
+            
+            <aside class="content__info-box content__image"> </aside>
+            
+            <aside class="content__info-box content__information">
+                <h2 class="content__info-box-title">Slappna av!</h2>
+                <p class="content__info-box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, illum!</p>
+            </aside>
+
+        </main>
+
+        <footer class="foot">
+            <nav class="foot__nav">
+                <a class="internal-link" href="#">Kontakt</a>
+                <a class="internal-link" href="#">Hitta hit</a>
+                <a class="internal-link" href="#">Om företaget</a>
+                
+            </nav>
+            
+        </footer>
+
+
+
+
+    </div>
 </body>
+
 </html>
