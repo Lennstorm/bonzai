@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-  * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:'Baloo+2', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+    font-family: 'Baloo+2', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 
@@ -138,6 +137,37 @@ body {
     display: flex;
 }
 
+.booking-banner .content__booking-banner-container {
+    display: grid;
+    font-size: 0.7rem;
+    grid-template-columns: 6 1fr;
+}
+
+.content__checkin-label {
+    grid-column: 1 / span 3;
+    grid-row: 1 / 1;
+}
+
+.content__checkout-label {
+    grid-column: 4 / span 3;
+    grid-row: 1 / 1;
+}
+
+.content__guest-qty {
+    grid-column: 1 / span 2;
+    grid-row: 2 / 1;
+}
+
+.content__room-qty {
+    grid-column: 3 / span 2;
+    grid-row: 2 / 1;
+}
+
+.booking__button {
+    grid-column: 5 / span 2;
+    grid-row: 2 / 1;
+}
+
 .booking-banner__navigation {
     background-color: var(--light-beige);
 
@@ -159,31 +189,33 @@ body {
 }
 
 .content .content__info-box {
-/*    background-color: var(--very-orange); SKA TAS BORT!!!!*/
-    
-/*    border: 0.5px solid black; SKA TAS BORT!!!!*/
+    /*    background-color: var(--very-orange); SKA TAS BORT!!!!*/
+
+    /*    border: 0.5px solid black; SKA TAS BORT!!!!*/
     width: 50%;
     aspect-ratio: 1;
 }
 
-.content__title {}
+.content__title {
+    font-weight: 1000;
+}
 
 .content .content__image:nth-of-type(1) {
-background: url(/assets/photos/09-day.jpg);
-background-repeat: no-repeat;
-background-size: 180%;
+    background: url(/assets/photos/09-day.jpg);
+    background-repeat: no-repeat;
+    background-size: 180%;
 }
 
 .content .content__image:nth-of-type(3) {
-background: url(/assets/photos/04-night.jpg);
-background-repeat: no-repeat;
-background-size: 180%;
+    background: url(/assets/photos/04-night.jpg);
+    background-repeat: no-repeat;
+    background-size: 180%;
 }
 
 .content .content__image:nth-of-type(5) {
-background: url(/assets/photos/05-night.jpg);
-background-repeat: no-repeat;
-background-size: 180%;
+    background: url(/assets/photos/05-night.jpg);
+    background-repeat: no-repeat;
+    background-size: 180%;
 }
 
 .content__info-box .content__info {
