@@ -19,6 +19,7 @@
 
 
 .internal-link {
+    font-size: 2vh;
     color: var(--bonzai-green);
     transition: transform .2s;
     text-decoration: none;
@@ -50,7 +51,7 @@ body {
 
 
 .header .header__logo {
-    max-height: 2vh;
+    max-height: 3vh;
 }
 
 
@@ -149,15 +150,16 @@ body {
 .booking-banner {
     height: 8vh;
     background-color: var(--light-green);
- 
-    gap: 1px;
+    padding: 2%;
 }
 
 .booking-form {
+    gap: 5px;
     display: grid;
     grid-template-areas:
         "item1 item2"
         "item3 item4";
+    justify-content: space-evenly;
 }
 
 .content__checkin-label {
@@ -178,7 +180,7 @@ body {
 }
 
 .booking__button {
-    grid-area: button;
+
     background-color: var(--very-orange);
 }
 
@@ -195,6 +197,37 @@ body {
     grid-template-columns: auto;
 
 }
+
+.content__page-map {
+    font-size: 0.8rem;
+    font-weight: 50;
+}
+
+.page-map__internal-link {
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-decoration: none;
+
+}
+
+.page-map__internal-link,
+.page-map__internal-link:visited,
+.page-map__internal-link:hover,
+.page-map__internal-link:active {
+    color: var(--smooth-brown);
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.content__page-map--noshow {
+    color: var(--light-beige);
+}
+
+
+
+
+
 
 .content .content__title,
 .content__info-box,
