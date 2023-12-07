@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
-    <title>About</title>
+    <title>Booking</title>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                     <input required="" placeholder="Välj antal" type="number">
                 </form>
 
-                <form class="content__room-qty" action="/book.html">
+                <form class="content__room-qty" action="/booking-search-results.html">
                     <label>Antal rum</label>
                     <input required="" placeholder="Välj antal" type="number">
                     <input class="booking__button" type="submit" value="Sök lediga rum">
@@ -65,33 +65,35 @@
         </section>
 
         <main class="content">
-            <h2 class="content__page-map"><a class="page-map__internal-link" href="/index.html">Hem</a>   /    about</h2>
-            <h1 class="content__title">bonz.ai</h1>
-            <h2 class="content__subtitle">ai-drivet hotell</h2>
+            <h2 class="content__page-map"><a class="page-map__internal-link" href="/index.html">Hem</a>   /    Boka</h2>
+            <h1 class="content__title">våra rum</h1>
 
-            <aside class="content__info-box content__image"> </aside>
+            
+            <section class="content__booking-wr ap">
+                <article class="content__booking-container">
+                
+                <form class="content__checkin-label">
+                    <label>Incheckning</label>
+                    <input required="" type="date">
+                </form>
+            
+                <form class="content__checkout-label">
+                    <label>Utcheckning</label>
+                    <input required="" type="date">
+                </form>
 
-            <aside class="content__info-box content__information">
-                <h2 class="content__info-box-title">Välkommen!</h2>
-                <p class="content__info-box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
-                    tempore ipsa explicabo fugiat minima soluta.</p>
-            </aside>
-
-            <aside class="content__info-box content__image"> </aside>
-
-            <aside class="content__info-box content__information">
-                <h2 class="content__info-box-title">Vår AI</h2>
-                <p class="content__info-box-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores cum
-                    ipsam odit provident id dolor?</p>
-            </aside>
-
-            <aside class="content__info-box content__image"> </aside>
-
-            <aside class="content__info-box content__information">
-                <h2 class="content__info-box-title">Slappna av!</h2>
-                <p class="content__info-box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
-                    tempore ipsa explicabo fugiat minima soluta.</p>
-            </aside>
+                <form class="content__guest-qty">
+                    <label>Antal gäster</label>
+                    <input required="" placeholder="Välj antal" type="number">
+                </form>
+                
+                <form class="content__room-qty" action="/booking-search-results.html">
+                    <label>Antal rum</label>
+                    <input required="" placeholder="Välj antal" type="number">
+                    <input class="booking__button" type="submit" value="Sök lediga rum">
+                </form>
+            </article>     
+            </section>
 
         </main>
 
@@ -112,3 +114,8 @@
 </body>
 
 </html>
+
+
+
+
+

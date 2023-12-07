@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
     <title>Booking</title>
 </head>
+
 <body>
 
     <div class="wrapper">
@@ -19,7 +20,7 @@
             <a class="header__logo" href="index.html"> <img class="header__logo"
                     src="/assets/logo/bonz.ai-logo-color-landscape.png" alt="bonzai-logo"> </a>
 
-            <a class="internal-link" href="booking.html">Boka</a>
+            <a class="internal-link" href="search.html">Boka</a>
 
 
         </header>
@@ -35,16 +36,40 @@
         </section>
 
         <section class="booking-banner">
-            <nav class="booking-banner__navigation"></nav>
+
+            <section class="booking-form">
+
+                <form class="content__checkin-label">
+                    <label>Incheckning</label>
+                    <input required="" type="date">
+                </form>
+
+                <form class="content__checkout-label">
+                    <label>Utcheckning</label>
+                    <input required="" type="date">
+                </form>
+
+
+                <form class="content__guest-qty">
+                    <label>Antal gäster</label>
+                    <input required="" placeholder="Välj antal" type="number">
+                </form>
+
+                <form class="content__room-qty" action="/booking-search-results.html">
+                    <label>Antal rum</label>
+                    <input required="" placeholder="Välj antal" type="number">
+                    <input class="booking__button" type="submit" value="Sök lediga rum">
+                </form>
+            </section>
 
         </section>
 
         <main class="content">
             <h2 class="content__page-map"><a class="page-map__internal-link" href="/index.html">Hem</a>   /    Boka</h2>
-            <h1 class="content__title">bok.ai bonz.ai</h1>
+            <h1 class="content__title">Våra rum</h1>
 
             
-            <section class="content__booking-wrap">
+            <section class="content__booking-wr ap">
                 <article class="content__booking-container">
                 
                 <form class="content__checkin-label">
@@ -89,8 +114,3 @@
 </body>
 
 </html>
-
-
-
-
-
