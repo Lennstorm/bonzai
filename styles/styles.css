@@ -18,6 +18,8 @@
 
 
 
+
+
 .internal-link {
     font-size: 2vh;
     color: var(--bonzai-green);
@@ -150,47 +152,48 @@ body {
 .booking-banner {
     height: 8vh;
     background-color: var(--light-green);
-    padding: 2%;
+    padding: 1%;
 }
 
 .booking-form {
-    gap: 5px;
+    gap: 1px;
     display: grid;
     grid-template-areas:
-        "item1 item2"
-        "item3 item4";
+    "item1 item2"
+    "item3 item4";
     justify-content: space-evenly;
 }
 
-.content__checkin-label {
+.booking-form__checkin-label {
     grid-area: item1;
 }
 
-.content__checkout-label {
+.booking-form__checkout-label {
     grid-area: item2;
 }
 
-.content__guest-qty {
+.booking-form__guest-qty {
     grid-area: item3;
 }
 
-.content__room-qty {
+.booking-form__room-qty {
     grid-area: item4;
 
 }
 
-.booking__content__image--room {
+.booking-banner__button {
     color: var(--smooth-brown);
     background-color: var(--very-orange);
     border: none;
     padding: 2px;
     border-radius: 3px;
 }
+/* DEN HÄR ÄR NOG ÖVERFLÖDIG
 
 .booking-banner__navigation {
     background-color: var(--light-beige);
 
-}
+}*/
 
 .content {
     /*    padding: 1rem auto 1rem auto;*/
@@ -225,6 +228,10 @@ body {
 
 .content__page-map--noshow {
     color: var(--light-beige);
+}
+
+.content__title {
+    font-size: 1rem;
 }
 
 .content .content__title,
@@ -367,17 +374,17 @@ max-height: 50%;
 }
 
 .content__info-box-title {
-    margin: auto 2rem 2rem 2rem;
+    margin: 10% 2% 10% 2%;
     align-self: center;
-    font-size: 2.53rem;
+    font-size: 150%;
 
 }
 
 .content__info-box-text {
     align-self: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20%;
 }
 
 
@@ -401,6 +408,6 @@ max-height: 50%;
 
 
 /*****MEDIA*******/
-@media screen {
-    
+@media screen and (min-width: 769px) {
+
 }
