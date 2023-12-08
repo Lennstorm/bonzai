@@ -15,12 +15,12 @@
 
         <header class="header">
 
-            <a class="internal-link" href="about.html">Hotellet</a>
+            <a class="internal-link" href="about.html" target="_blank">Hotellet</a>
 
             <a class="header__logo" href="index.html"> <img class="header__logo"
                     src="/assets/logo/bonz.ai-logo-color-landscape.png" alt="bonzai-logo"> </a>
 
-            <a class="internal-link" href="search.html">Boka</a>
+            <a class="internal-link" href="search.html" target="_blank">Rum</a>
 
 
         </header>
@@ -41,23 +41,23 @@
 
                 <form class="content__checkin-label">
                     <label>Incheckning</label>
-                    <input required="" type="date">
+                    <input required="" type="date" value="2022-12-10">
                 </form>
 
                 <form class="content__checkout-label">
                     <label>Utcheckning</label>
-                    <input required="" type="date">
+                    <input required="" type="date" value="2022-12-12">
                 </form>
 
 
                 <form class="content__guest-qty">
                     <label>Antal gäster</label>
-                    <input required="" placeholder="Välj antal" type="number">
+                    <input required="" placeholder="Välj antal" type="number" value="2">
                 </form>
 
-                <form class="content__room-qty" action="/booking-search-results.html">
+                <form class="content__room-qty" action="/book.html">
                     <label>Antal rum</label>
-                    <input required="" placeholder="Välj antal" type="number">
+                    <input required="" placeholder="Välj antal" type="number" value="1">
                     <input class="booking__button" type="submit" value="Sök lediga rum">
                 </form>
             </section>
@@ -66,36 +66,32 @@
 
         <main class="content">
             <h2 class="content__page-map"><a class="page-map__internal-link" href="/index.html">Hem</a>   /    Boka</h2>
-            <h1 class="content__title">Våra rum</h1>
+            <h1 class="content__title">välj rum</h1>
+            <h2 class="content__subtitle">ai-driven lyx</h2>
 
-            
-            <section class="content__booking-wr ap">
-                <article class="content__booking-container">
-                
-                <form class="content__checkin-label">
-                    <label>Incheckning</label>
-                    <input required="" type="date">
-                </form>
-            
-                <form class="content__checkout-label">
-                    <label>Utcheckning</label>
-                    <input required="" type="date">
-                </form>
-
-                <form class="content__guest-qty">
-                    <label>Antal gäster</label>
-                    <input required="" placeholder="Välj antal" type="number">
-                </form>
-                
-                <form class="content__room-qty" action="/booking-search-results.html">
-                    <label>Antal rum</label>
-                    <input required="" placeholder="Välj antal" type="number">
-                    <input class="booking__button" type="submit" value="Sök lediga rum">
-                </form>
-            </article>     
-            </section>
-
-        </main>
+                <aside class="content__info-box content__image content__image--room"> </aside>
+    
+                <aside class="content__info-box content__information">
+                    <h2 class="content__info-box-title">Svit</h2>
+                    <p class="content__info-box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos tempora doloremque velit iste eveniet, odit aspernatur corporis numquam distinctio aut asperiores nisi mollitia illum quisquam debitis, voluptate vitae quia porro qui earum dicta culpa nam laborum? Fugit, architecto repellat!</p>
+                </aside>
+    
+                <aside class="content__info-box content__image content__image--room"> </aside>
+    
+                <aside class="content__info-box content__information">
+                    <h2 class="content__info-box-title">Studio</h2>
+                    <p class="content__info-box-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores vitae, suscipit iusto, nam quis veritatis hic expedita praesentium itaque, rem fugiat autem recusandae aperiam illum repudiandae exercitationem? Voluptate, illum recusandae! Aut incidunt sint commodi veritatis provident sequi vitae quisquam temporibus.</p>
+                </aside>
+    
+                <aside class="content__info-box content__image content__image--room"> </aside>
+    
+                <aside class="content__info-box content__information">
+                    <h2 class="content__info-box-title">Superior</h2>
+                    <p class="content__info-box-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, voluptas, blanditiis deleniti inventore enim vitae id, praesentium tempore quod distinctio beatae culpa harum reprehenderit quasi nesciunt modi eveniet consectetur repellat. Expedita architecto ipsum suscipit error rem. Rem doloribus delectus rerum.</p>
+                </aside>            
+    
+    
+            </main>
 
         <footer class="foot">
             <nav class="foot__nav">

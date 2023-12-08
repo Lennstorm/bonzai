@@ -179,9 +179,12 @@ body {
 
 }
 
-.booking__button {
-
+.booking__content__image--room {
+    color: var(--smooth-brown);
     background-color: var(--very-orange);
+    border: none;
+    padding: 2px;
+    border-radius: 3px;
 }
 
 .booking-banner__navigation {
@@ -224,11 +227,6 @@ body {
     color: var(--light-beige);
 }
 
-
-
-
-
-
 .content .content__title,
 .content__info-box,
 .content__subtitle {
@@ -238,9 +236,6 @@ body {
 }
 
 .content .content__info-box {
-    /*    background-color: var(--very-orange); SKA TAS BORT!!!!*/
-
-    /*    border: 0.5px solid black; SKA TAS BORT!!!!*/
     width: 50%;
     aspect-ratio: 1;
 }
@@ -294,23 +289,75 @@ body {
     background-size: 180%;
 }
 /*ROOMS*/
+
+.content .content__image--room {
+    max-width: 50%;
+max-height: 50%;
+}
+
 .content .content__image--room:nth-of-type(1) {
     background: url(/assets/photos/05-day.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center bottom;
 }
+
 
 .content .content__image--room:nth-of-type(3) {
     background: url(/assets/photos/04-day.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center bottom;
 }
 
 .content .content__image--room:nth-of-type(5) {    
     background: url(/assets/photos/06-day.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center bottom;
 }
+
+ /*.content .content__image--room:nth-of-type(1) {
+    position: relative;
+    background: url(/assets/photos/05-day.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.content .content__image--room:nth-of-type(1)::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.content .content__image--room:nth-of-type(3) {
+    position: relative;
+    background: url(/assets/photos/04-day.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.content .content__image--room:nth-of-type(3)::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.content .content__image--room:nth-of-type(5) {
+    position: relative;
+    background: url(/assets/photos/06-day.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.content .content__image--room:nth-of-type(5)::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}*/
 
 
 .content .content__information {
@@ -353,9 +400,7 @@ body {
 
 
 
-
-
-
-
-
-/********************/
+/*****MEDIA*******/
+@media screen {
+    
+}
