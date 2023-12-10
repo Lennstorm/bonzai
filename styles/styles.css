@@ -16,10 +16,6 @@
     --very-orange: #F08F3F;
 }
 
-
-
-
-
 .internal-link {
     font-size: 2vh;
     color: var(--bonzai-green);
@@ -35,12 +31,12 @@
 
 
 body {
-    max-width: 768px;
+    max-width: 1440px;
 }
 
 .wrapper {
 
-    max-width: 768px;
+    max-width: 1440px;
 }
 
 .header {
@@ -59,7 +55,7 @@ body {
 
 .hero {
     overflow: hidden;
-    max-width: 768px;
+/*    max-width: 768px;*/
     aspect-ratio: 2.5;
     position: relative;
     /*    background-image: url(/assets/photos/01-day.jpg);*/
@@ -128,34 +124,22 @@ body {
 
     100% {
         opacity: 0.5;
-        /*animation-timing-function: ease;
-        z-index: 0;*/
     }
 }
-
-/*
-20% {
-    opacity: 0;
-    animation-timing-function: step-end;
-    z-index: 0;
-}
-
-94% {
-    opacity: 1;
-    animation-timing-function: step-end;
-    z-index: -1;
-}*/
-
 
 
 
 .booking-banner {
-    height: 8vh;
+    height: 14vh;
     background-color: var(--light-green);
     padding: 1%;
 }
 
 .booking-form {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     gap: 1px;
     display: grid;
     grid-template-areas:
@@ -166,6 +150,7 @@ body {
 
 .booking-form__checkin-label {
     grid-area: item1;
+    
 }
 
 .booking-form__checkout-label {
@@ -196,17 +181,24 @@ body {
 }*/
 
 .content {
-    /*    padding: 1rem auto 1rem auto;*/
     background-color: var(--light-beige);
     color: var(--smooth-brown);
+}
+ 
+.content__top-wrapper {
+display: flex;
+flex-direction: column;
+}
+
+    .content__wrapper {
     display: grid;
     grid-template-columns: auto;
-
 }
 
 .content__page-map {
     font-size: 0.8rem;
     font-weight: 50;
+    align-self: flex-start;
 }
 
 .page-map__internal-link {
@@ -298,6 +290,7 @@ body {
 /*ROOMS*/
 
 .content .content__image--room {
+margin-top: auto;
     max-width: 50%;
 max-height: 50%;
 }
@@ -324,49 +317,6 @@ max-height: 50%;
     background-position: center bottom;
 }
 
- /*.content .content__image--room:nth-of-type(1) {
-    position: relative;
-    background: url(/assets/photos/05-day.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-}
-
-.content .content__image--room:nth-of-type(1)::before {
-    content: "";
-    display: block;
-    padding-top: 56.25%;
-}
-
-.content .content__image--room:nth-of-type(3) {
-    position: relative;
-    background: url(/assets/photos/04-day.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-}
-
-.content .content__image--room:nth-of-type(3)::before {
-    content: "";
-    display: block;
-    padding-top: 56.25%;
-}
-
-.content .content__image--room:nth-of-type(5) {
-    position: relative;
-    background: url(/assets/photos/06-day.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-}
-
-.content .content__image--room:nth-of-type(5)::before {
-    content: "";
-    display: block;
-    padding-top: 56.25%;
-}*/
-
-
 .content .content__information {
 
     display: flex;
@@ -387,6 +337,58 @@ max-height: 50%;
     margin-bottom: 20%;
 }
 
+.content-information--book {
+     background-color: var(--light-green)
+}
+
+.content__room-booking-info {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "stay nights"
+    "patrons guests"
+    "price amount"
+}
+
+.content__info-box-text--nights{
+grid-area: stay;
+}
+
+.content__info-box-text--nights-qty{
+grid-area: nights;
+justify-self: flex-end;
+}
+
+.content__info-box-text--guests{
+grid-area: patrons;
+}
+
+.content__info-box-text--guests-qty {
+grid-area: guests;
+justify-self: flex-end;
+}
+
+.content__info-box-text--price {
+grid-area: price;
+}
+
+.content__info-box-text--amount {
+grid-area: amount;
+justify-self: flex-end;
+}
+
+.content__confirm-btn {
+    display: inline-block;
+    width: 35%;
+    color: var(--smooth-brown);
+    background-color: var(--very-orange);
+    border: none;
+    margin: auto 5% 5% auto;
+    padding: 6px;
+    border-radius: 3px;
+}
 
 
 .foot {
@@ -408,6 +410,32 @@ max-height: 50%;
 
 
 /*****MEDIA*******/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 420px) {
 
+    .content__wrapper {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(2, 1fr);
+}
+
+.booking-form {
+    margin-top: 3%;
+    margin-bottom: auto;
+/*   margin-left: 5%;
+    margin-right: 5%;
+    gap: 1px;
+    display: grid;*/
+    grid-template-areas:
+    "item1 item2 item3 item4";
+    justify-content: space-evenly;
+}
+
+.booking-banner {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.content__wrapper {
+    margin-left: 15%;
+    margin-right: 15%;
 }
